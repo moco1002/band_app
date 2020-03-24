@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
-  get 'static_pages/top'
-  get 'static_pages/help'
+  root 'static_pages#top'
+  get 'static_pages/privacy'
   get 'static_pages/about'
-root 'application#hello'
+  get 'static_pages/info'
+  get 'static_pages/policy'
 end

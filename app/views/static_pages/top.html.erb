@@ -1,2 +1,10 @@
-<h1>StaticPages#top</h1>
-<p>Find me in app/views/static_pages/top.html.erb</p>
+<% provide(:title, "Welcome!") %>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= yield(:title) %> | アマチュアミュージシャンとアマチュアバンドを繋ぐ！CopiBANG</title>
+  </head>
+  <body>
+      <p>ポートフォリオのトップページだよ</p>
+  </body>
+</html>
