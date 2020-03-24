@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%= yield(:title) %> | アマチュアミュージシャンとアマチュアバンドを繋ぐ！CopiBANG</title>
+    <title><%= full_title(yield(:title)) %></title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -10,12 +10,13 @@
   </head>
 
   <body>
-    <h1><%= yield(:title) %>〜CopiBANG〜</h1>
+    <h1><%= full_title2(yield(:title)) %></h1>
     <%= yield %>
     <a href="http://localhost:3000">top</a>
     <a href="http://localhost:3000/static_pages/about">CopiBANGとは</a>
     <a href="http://localhost:3000/static_pages/privacy">個人情報</a>
     <a href="http://localhost:3000/static_pages/policy">利用規約</a>
     <a href="http://localhost:3000/static_pages/info">お問い合わせ</a>
+
   </body>
 </html>
