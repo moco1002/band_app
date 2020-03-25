@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
+  get 'users/new'
   root 'static_pages#top'
-  get 'static_pages/privacy'
-  get 'static_pages/about'
-  get 'static_pages/info'
-  get 'static_pages/policy'
+  get '/privacy', to: 'static_pages#privacy'
+  get '/about', to: 'static_pages#about'
+  get '/info', to: 'static_pages#info'
+  get '/policy', to: 'static_pages#policy'
+  get '/signup', to: 'users#new'
 end

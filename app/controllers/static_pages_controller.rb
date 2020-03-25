@@ -4,12 +4,12 @@ class StaticPagesController < ApplicationController
   end
 
   def privacy
-    
+
 
   end
 
   def about
-
+    
   end
 
   def policy
